@@ -1,0 +1,37 @@
+/* Contenedor principal: Flexbox para organizar el texto y el canvas en columnas */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Contenedor de Texto */
+.text-content {
+  flex: 1; /* Ocupa el mismo espacio flexible que el canvas */
+  max-width: 50%; /* Limitar el ancho del texto */
+  margin-right: 20px; /* Añadir espacio entre el texto y el canvas */
+}
+
+/* Texto */
+.text-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Canvas */
+.canvas {
+  flex: 1; /* Ajustar para que el canvas también sea flexible */
+  max-width: 50%; /* Limitar el tamaño máximo del canvas */
+}
+
+#neuronCanvas {
+  width: 100%;
+  height: auto; /* El canvas se ajustará al tamaño disponible */
+}
